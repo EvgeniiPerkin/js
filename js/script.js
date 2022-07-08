@@ -1,6 +1,7 @@
 setTimeout(wakeUpUser, 3000);
 // отображение сообщения о скидке через 3 секунды
 function wakeUpUser(){
+    console.log("this is a test log")
     var price = 1000;
     var discount = 5;
     var total = price - (price * (discount / 100));
