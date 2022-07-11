@@ -18,10 +18,14 @@ function main(){
             guess = guess + 1;
             if (attack == location1 || attack == location2 || attack == location3){
                 hits = hits + 1;
+                alert("HIT");
                 if (hits == 3){
                     isSunk = true;
                     alert("You win!!!");
                 }
+            }
+            else{
+                alert("MISS");
             }
         }
     }
