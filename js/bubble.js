@@ -5,29 +5,30 @@ var scores = [60, 50, 60, 58, 54, 54,
 46, 31, 57, 52, 44, 18,
 41, 53, 55, 61, 51, 44];
 
-function getScoresInfo(scores){
-    var l = scores.length;
-    var index = 0;
-    var favorit = 0;
-    while(l > index){
-        if (favorit < scores[index]){
-            favorit = scores[index];
+function printAndGetHighScore(scores){
+    var highScore = 0;
+    var output;
+    for (var i = 0; i < scores.length; i++){
+        output = "Bubble solution #" + i + " score: " + scores[i];
+        console.log(output);
+        if (scores[i] > highScore){
+            highScore = scores[i];
         }
-        console.log("Bubble solution #" + index + ": " + scores[index]);
-        index = index + 1;
     }
-    console.log("Bubbles tests: " + l);
-    console.log("Highest bubble score: " + favorit);
-
-    index = 0;
-    var str = "Solutions with highest score: ";
-    while(l > index){
-        if (scores[index] == favorit){
-            str = str + "#" + index + ", ";
-        }
-        index = index + 1;
-    }
-    console.log(str);
+    return highScore;
 }
 
-getScoresInfo(scores);
+function getBestResults(scores, highScore){
+    var results = [];
+    for(var i = 0; i < scores.lengh; i++){
+        if (scores[i] == highScore){
+            results.push(scores[i]);
+        }
+    }
+    return results;
+}
+
+console.log("Bubbles tests: " + scores.length);
+var highScore = printAndGetHighScore(scores);
+console.log("Highest bubble score: " + highScore);
+console.log("Solutions with highest score: " + getBestResults(scores, highScore));
