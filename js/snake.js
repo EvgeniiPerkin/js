@@ -4,7 +4,7 @@ function Snake() {
     this.xspeed = 1;
     this.yspeed = 0;
 
-    this.dir = funciton(x, y) {
+    this.dir = function(x, y) {
         this.xspeed = x;
         this.yspeed = y;
     }
