@@ -1,0 +1,27 @@
+.body {
+    background-color: rgb(0, 0, 0);
+    margin: 30px;
+}
+
+.table {
+	width: 700px;
+    height: 700px;
+	margin-bottom: 25px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+
+.table th {
+	font-weight: bold;
+    font-size: x-large;
+	padding: 10px;
+	background: #424040;
+    
+	border: 1px solid #dddddd;
+}
+
+.table td {
+	padding: 10px;
+	background: #5066e4;
+	border: 1px solid #dddddd;
+}
