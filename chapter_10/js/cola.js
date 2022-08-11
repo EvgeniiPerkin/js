@@ -40,7 +40,7 @@ function compareSold(p1, p2) {
 function compareName(p1, p2) {
     if (p1.name > p2.name) {
         return 1;
-    } else if (p1.name == p2.name) {
+    } else if (p1.name === p2.name) {
         return 0;
     } else {
         return -1;
@@ -50,7 +50,7 @@ function compareName(p1, p2) {
 function compareColor(p1, p2) {
     if (p1.color > p2.color) {
         return 1;
-    } else if (p1.color == p2.color) {
+    } else if (p1.color === p2.color) {
         return 0;
     } else {
         return -1;
